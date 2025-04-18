@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ramirez_S1.Views.vprincipal"
+             Title="vprincipal">
+    <ScrollView>
+        <VerticalStackLayout
+        Padding="20"
+        Spacing="20">
+        <Label 
+        Text="Taller Semana 1"
+        FontSize="20"
+        VerticalOptions="Center" 
+        HorizontalOptions="Center" />
+
+        <Label Text="Formulario d inscripcion"
+           FontSize="18"
+           TextColor="Red"/>
+
+        <Image 
+        Source="uisrael.jpg"
+        WidthRequest="400"/>
+
+        <Label Text="Identificación:" FontAttributes="Bold"/>
+        <Entry x:Name="txtNumeroIdentificacion" Placeholder="Número"/>
+
+        <Label Text="Apellidos:" FontAttributes="Bold"/>
+        <Entry x:Name="txtApellidoPaterno" Placeholder="Paterno"/>
+        <Entry x:Name="txtApellidoMaterno" Placeholder="Materno"/>
+
+        <Label Text="Nombres completos:" FontAttributes="Bold"/>
+        <Entry x:Name="txtNombresCompletos" Placeholder="Nombres"/>
+
+        <Label Text="Teléfono personal:" FontAttributes="Bold"/>
+        <Entry x:Name="txtTelefono" Placeholder="__________" Keyboard="Telephone"/>
+
+        <Label Text="Correo personal:" FontAttributes="Bold"/>
+        <Entry x:Name="txtCorreo" Placeholder="ejemplo@correo.com" Keyboard="Email"/>
+
+        <Label Text="Confirmar correo:" FontAttributes="Bold"/>
+        <Entry x:Name="txtConfirmarCorreo" Placeholder="Repetir correo" Keyboard="Email"/>
+
+        <Button 
+Text="Guardar"
+BackgroundColor="DarkGreen"
+TextColor="White"
+Clicked="Button_Clicked"/>
+
+    </VerticalStackLayout>
+        </ScrollView>
+</ContentPage>
